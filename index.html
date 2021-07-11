@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+
+        <div class="imageContiner">
+            <img src="images/25.png" alt="22" class="image">
+        </div>
+            <div class="container">
+                <label for="username"> <b>Username</b></label>
+                <input type="text" placeholder="username" name="username" id="" required><br>
+
+                <label for="password"> <b>password</b></label>
+                <input type="password" placeholder="enter password" name="enter password" id="" required><br>
+                    <p id="innerHtml"></p>
+                <button onclick="evenHandler()" type="submit"> Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember me" id="">
+                    Remember me
+                </label>
+            </div>
+
+            <div class="container">
+                <button class="cancelbtn" type="button"> Cancel</button>
+                <span class="span">Forget <a href="#">password</a></span>
+            </div>
+    </form>
+
+
+
+    <script>
+        function evenHandler() {
+            document.getElementById("innerHtml").innerHTML = "Login Success";
+        }
+    </script>
+</body>
+</html>
